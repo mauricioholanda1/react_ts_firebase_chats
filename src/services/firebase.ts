@@ -3,13 +3,13 @@ import "firebase/auth";
 import "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyARVAT2vILNNnVBOaQpCHL6uD_as0yZARk",
-  authDomain: "labvision-a8ad1.firebaseapp.com",
-  databaseURL: "https://labvision-a8ad1-default-rtdb.firebaseio.com",
-  projectId: "labvision-a8ad1",
-  storageBucket: "labvision-a8ad1.appspot.com",
-  messagingSenderId: "108486981751",
-  appId: "1:108486981751:web:1d159394166cf247582e72",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
